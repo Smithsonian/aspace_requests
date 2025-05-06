@@ -5,9 +5,6 @@ projects: ["CAAS DATA"]
 body:
   - type: markdown
     attributes:
-      value: "## "
-  - type: markdown
-    attributes:
       value: |
         Please use this form to request a project or general work to be done with ArchivesSpace. Once an issue will be generated once the form is submitted, and the issue will then be sent to the CAAS team project board for review, prioritization, and assignment. The types of requests include:
 
@@ -15,20 +12,15 @@ body:
         If you have a bug request, use this ServiceNow form: [ASpace Bug Report]().
         
         If you have a training request, use this ServiceNow form: [ASpace Training Request]()
+  - type: markdown
+    attributes:
+      value: "## Project Request Info"
   - type: textarea
     id: project_description
     attributes:
       label: ArchivesSpace Project Description
       description: Please include any context for the request, links to the issue/documentation, or technical challenges.
       placeholder: 3-5 sentences describing your project request. Bullet points and screenshots are encouraged!
-    validations:
-      required: true
-  - type: input
-    id: project_title
-    attributes:
-      label: Project Request Title
-      description: What is the project request title? (A short, title'able description)
-      placeholder: ex. Add REPO to Locations
     validations:
       required: true
   - type: dropdown
@@ -74,6 +66,9 @@ body:
         - High
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: "## Repository/Collecting Unit Info"
   - type: checkboxes
     id: repo_unit
     attributes:
