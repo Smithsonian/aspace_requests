@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please use this form to request a project or general work to be done with ArchivesSpace. Once an issue will be generated once the form is submitted, and the issue will then be sent to the CAAS team project board for review, prioritization, and assignment. The types of requests include:
+        Please use this form to request a project or general work to be done with ArchivesSpace. Once completed, an issue will be generated and sent to the CAAS team project board for review, prioritization, and assignment.
 
         
         If you have a bug request, use this ServiceNow form: [ASpace Bug Report]().
