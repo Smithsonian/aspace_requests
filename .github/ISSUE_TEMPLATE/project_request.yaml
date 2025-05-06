@@ -1,0 +1,126 @@
+name: ArchivesSpace Request Form
+description: Requests for ArchivesSpace work to be completed by the CAAS team.
+title: "[PROJECT_REQUEST]: "
+projects: ["CAAS DATA"]
+body:
+  - type: markdown
+    attributes:
+      value: "## "
+  - type: markdown
+    attributes:
+      value: |
+        Please use this form to request a project or general work to be done with ArchivesSpace. Once an issue will be generated once the form is submitted, and the issue will then be sent to the CAAS team project board for review, prioritization, and assignment. The types of requests include:
+
+        
+        If you have a bug request, use this ServiceNow form: [ASpace Bug Report]().
+        
+        If you have a training request, use this ServiceNow form: [ASpace Training Request]()
+  - type: textarea
+    id: project_description
+    attributes:
+      label: ArchivesSpace Project Description
+      description: Please include any context for the request, links to the issue/documentation, or technical challenges.
+      placeholder: 3-5 sentences describing your project request. Bullet points and screenshots are encouraged!
+    validations:
+      required: true
+  - type: input
+    id: project_title
+    attributes:
+      label: Project Request Title
+      description: What is the project request title? (A short, title'able description)
+      placeholder: ex. Add REPO to Locations
+    validations:
+      required: true
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Project Type
+      description: Select the type of project request.
+      options:
+        - Data export
+        - Data ingest
+        - Data migration from existing database
+        - Feature/plugin request
+        - Metadata cleanup/modification
+        - Report (metadata report or similar)
+        - SOVA Issue
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: type_other
+    attributes:
+      label: Project Type - Other
+      description: If selected "Other" for project type, please describe your project here.
+      placeholder: Fill this out only if selected "Other"
+    validations:
+      required: false
+  - type: input
+    id: due_date
+    attributes:
+      label: Desired Project Completion Date (if applicable)
+      description: What is the desired date for this request to be completed?
+      placeholder: DD-MM-YYYY. ex. 31-12-2025
+    validations:
+      required: false
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Project Urgency
+      description: Select the urgency level of the project request.
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false
+  - type: checkboxes
+    id: repo_unit
+    attributes:
+      label: Repository/Collecting Unit
+      description: Select one or more of the repositories/collecting units involved in this project request.
+      options:
+        - label: AAA
+        - label: AAG
+        - label: ACMA
+        - label: CHSDM
+        - label: CFCH
+        - label: EEPA
+        - label: FSA
+        - label: NAA
+        - label: NASM
+        - label: NMAAHC
+        - label: NMAH
+        - label: NMAI
+        - label: NPG
+        - label: NPM
+        - label: SAAM
+        - label: SIA
+        - label: SIL
+        - label: Other
+    validations:
+      required: false
+  - type: input
+    id: repo_other
+    attributes:
+      label: Repository/Collecting Unit - Other
+      description: If selected "Other" for repository/collecting unit, please describe what repositories/units are involved.
+      placeholder: Fill this out only if selected "Other"
+    validations:
+      required: false
+  - type: input
+    id: contact_name
+    attributes:
+      label: Request/Repository Point of Contact Name(s)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. Steve Rogers, Natasha Romanov
+    validations:
+      required: true
+  - type: input
+    id: contact_email
+    attributes:
+      label: Request/Repository Point of Contact Email(s)
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. RogersS@si.edu; RomanovN@si.edu
+    validations:
+      required: true
