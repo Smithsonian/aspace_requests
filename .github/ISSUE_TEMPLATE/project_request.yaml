@@ -107,7 +107,7 @@ body:
     id: contact_name
     attributes:
       label: Request/Repository Point of Contact Name(s)
-      description: How can we get in touch with you if we need more info?
+      description: Enter the name(s) of the requester and anyone else who is associated with this project.
       placeholder: ex. Steve Rogers, Natasha Romanov
     validations:
       required: true
@@ -115,7 +115,11 @@ body:
     id: contact_email
     attributes:
       label: Request/Repository Point of Contact Email(s)
-      description: How can we get in touch with you if we need more info?
+      description: Enter the email(s) of the requester and anyone else who is associated with this project.
       placeholder: ex. RogersS@si.edu; RomanovN@si.edu
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        Please refrain from assigning individuals, labels, issue type, project, or milestone
