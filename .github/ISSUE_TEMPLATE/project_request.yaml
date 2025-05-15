@@ -1,17 +1,20 @@
 name: ArchivesSpace Request Form
 description: Requests for ArchivesSpace work to be completed by the CAAS team.
 title: "[PROJECT_REQUEST]: "
-projects: ["CAAS DATA"]
+projects: ["Smithsonian/22"]
 body:
   - type: markdown
     attributes:
       value: |
         Please use this form to request a project or general work to be done with ArchivesSpace. Once completed, an issue will be generated and sent to the CAAS team project board for review, prioritization, and assignment.
+        
+        NOTE: This repository is PUBLIC! Please share any files or screenshots via SharePoint, using this folder: [Requests_Shared_Folder](https://sinet.sharepoint.com/:f:/s/OCIO-DigitalPlatforms-CAASB/EglMM0pAikBIuJ1VtYOX2jYBl0h1a4ZvQKW-STXHzArcRw?e=I3DwHH)
+        Refrain from including any sensitive information within the form.
 
         
-        If you have a bug request, use this ServiceNow form: [ASpace Bug Report]().
-        
-        If you have a training request, use this ServiceNow form: [ASpace Training Request]()
+#        If you have a bug request, use this ServiceNow form: [ASpace Bug Report]().
+#
+#        If you have a training request, use this ServiceNow form: [ASpace Training Request]()
   - type: markdown
     attributes:
       value: "## Project Request Info"
@@ -20,7 +23,7 @@ body:
     attributes:
       label: ArchivesSpace Project Description
       description: Please include any context for the request, links to the issue/documentation, or technical challenges.
-      placeholder: 3-5 sentences describing your project request. Bullet points and screenshots are encouraged!
+      placeholder: 3-5 sentences describing your project request. Please share any files or screenshots via SharePoint, using this folder - [Requests_Shared_Folder](https://sinet.sharepoint.com/:f:/s/OCIO-DigitalPlatforms-CAASB/EglMM0pAikBIuJ1VtYOX2jYBl0h1a4ZvQKW-STXHzArcRw?e=I3DwHH). Bullet points and screenshots are encouraged!
     validations:
       required: true
   - type: dropdown
