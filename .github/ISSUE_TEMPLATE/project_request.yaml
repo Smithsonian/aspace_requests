@@ -2,13 +2,14 @@ name: ArchivesSpace Request Form
 description: Requests for ArchivesSpace work to be completed by the CAAS team.
 title: "[PROJECT_REQUEST]: "
 projects: ["Smithsonian/22"]
+labels: ["enhancement", "question"]
 body:
   - type: markdown
     attributes:
       value: |
         Please use this form to request a project or general work to be done with ArchivesSpace. Once completed, an issue will be generated and sent to the CAAS team project board for review, prioritization, and assignment.
         
-        NOTE: This repository is PUBLIC! Please share any files or screenshots via SharePoint, using the above folder: [Requests_Shared_Folder](https://sinet.sharepoint.com/:f:/s/OCIO-DigitalPlatforms-CAASB/EglMM0pAikBIuJ1VtYOX2jYBl0h1a4ZvQKW-STXHzArcRw?e=I3DwHH)
+        NOTE: This repository is PUBLIC! Please share any files or screenshots via SharePoint, using this folder: [Requests_Shared_Folder](https://sinet.sharepoint.com/:f:/s/OCIO-DigitalPlatforms-CAASB/EglMM0pAikBIuJ1VtYOX2jYBl0h1a4ZvQKW-STXHzArcRw?e=I3DwHH)
         Refrain from including any sensitive information within the form.
 
         
